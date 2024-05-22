@@ -10,21 +10,30 @@
     padding: 10px 40px;
     justify-content: space-between;
 
+    position: relative;
+    z-index: 4;
+
     @media (max-width: $tablet) {
+      padding: 10px 20px;
+      height: 64px;
       border-radius: 0 0 12px 12px;
     }
 
     @media (max-width: $mobile) {
-      height: 64px;
       margin-bottom: 35px;
     }
+  }
+
+  // .header__body-reverse
+  .header__body-reverse {
+    flex-direction: row-reverse;
   }
 
   // .header__logo
   &__logo {
     margin-bottom: 22px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       margin-bottom: 15px;
     }
   }
@@ -102,10 +111,38 @@
   &__list {
     display: flex;
     gap: 60px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   // .menu__item
   &__item {
+    &:hover {
+      font-weight: 600;
+    }
+    @media (max-width: $tablet) {
+      border-bottom: 1px solid #727281;
+      padding: 8px 0;
+      font-weight: 400;
+    }
+  }
+
+  .dropdown {
+    cursor: pointer;
+
+    @media (min-width: $tablet) {
+      &:hover {
+        .menu__sublist {
+          opacity: 1;
+          visibility: visible;
+          height: auto;
+          width: auto;
+        }
+      }
+    }
   }
 
   // .menu__link
@@ -114,7 +151,47 @@
 
   // .menu__sublist
   &__sublist {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease 0s;
+    transition-delay: 0.2s;
+
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 4px 112px 0px rgba(0, 0, 0, 0.2);
+    margin-left: -40px;
+    padding: 40px;
+    background: #fafafb;
+
+    position: absolute;
+    z-index: 2;
+    top: 72px;
+    font-weight: 400;
+
+    @media (max-width: $tablet) {
+      position: static;
+      height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      transition-delay: 0s;
+    }
+  }
+
+  .sub-active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: none;
+  }
+
+  .dropdown-active {
+    font-weight: 600;
   }
 
   // .menu__subitem
@@ -124,4 +201,11 @@
   // .menu__sublink
   &__sublink {
   }
+}
+
+// .header__menu-label
+
+.header__menu-label {
+  z-index: 9;
+  font-weight: 600;
 }

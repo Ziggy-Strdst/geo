@@ -3,6 +3,24 @@ html {
   font-style: normal;
 }
 
+h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #225156;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.hide {
+  display: none;
+}
+
 .main-btn {
   padding: 10px 12px;
   border-radius: 8px;
