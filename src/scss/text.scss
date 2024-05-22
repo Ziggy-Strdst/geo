@@ -1,0 +1,35 @@
+.text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+  p {
+    margin-bottom: 32px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  ul,
+  ol {
+    margin-bottom: 32px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
+
+  ul li {
+    list-style-type: disc;
+    margin-left: 25px;
+  }
+
+  ol li {
+    margin-left: 25px;
+  }
+}

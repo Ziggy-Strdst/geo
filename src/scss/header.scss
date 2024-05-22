@@ -9,6 +9,7 @@
     align-items: center;
     padding: 10px 40px;
     justify-content: space-between;
+    gap: 30px;
 
     position: relative;
     z-index: 4;
@@ -78,6 +79,7 @@
 
   // .header__phone-desktop
   &__phone-desktop {
+    text-wrap: nowrap;
     @media (max-width: $tablet) {
       display: none;
     }
@@ -110,7 +112,10 @@
   // .menu__list
   &__list {
     display: flex;
-    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include adaptiveValue('column-gap', 60, 10);
+    // gap: 60px;
 
     @media (max-width: $tablet) {
       flex-direction: column;

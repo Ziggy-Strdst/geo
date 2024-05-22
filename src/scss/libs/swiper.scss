@@ -219,21 +219,23 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 10px;
+  left: 20px;
   right: auto;
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  content: 'prev';
+  // content: 'prev';
+  content: url('../../img/icons/arrow-left.svg');
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 10px;
+  right: 20px;
   left: auto;
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: 'next';
+  // content: 'next';
+  content: url('../../img/icons/arrow-right.svg');
 }
 .swiper-button-lock {
   display: none;
