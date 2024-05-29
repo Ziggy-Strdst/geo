@@ -3,16 +3,15 @@
   @@include('html/_head.htm',{ "title":"Геотехрешения" })
   <body>
     <div class="wrapper">
+      @@include('html/_header.htm',{})
       <main class="page">
         <section class="hero">
           <div class="header__mobile"></div>
-          <div class="hero__container">
-            @@include('html/_header.htm',{}) @@include('html/_hero.htm',{})
-          </div>
+          <div class="hero__container">@@include('html/_hero.htm',{})</div>
         </section>
         @@include('html/_advantages.htm',{}) @@include('html/_text.htm',{})
         @@include('html/_slider.htm',{}) @@include('html/_text.htm',{})
-        @@include('html/_form.htm',{})
+        @@include('html/_form.htm',{}) @@include('html/_faq.htm',{})
       </main>
       @@include('html/_footer.htm',{})
     </div>

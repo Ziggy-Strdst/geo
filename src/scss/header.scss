@@ -1,4 +1,17 @@
 .header {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+
+  @media (max-width: $tablet) {
+    top: 0;
+  }
+  &__container {
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+  }
   &__body {
     height: 72px;
     margin-bottom: 60px;
@@ -75,6 +88,9 @@
 
   // .header__phone
   &__phone {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   // .header__phone-desktop
@@ -94,6 +110,9 @@
 
   // .header__email
   &__email {
+    &:hover {
+      text-decoration: underline;
+    }
     @media (max-width: $tablet) {
       display: none;
     }
@@ -125,9 +144,6 @@
 
   // .menu__item
   &__item {
-    &:hover {
-      font-weight: 600;
-    }
     @media (max-width: $tablet) {
       border-bottom: 1px solid #727281;
       padding: 8px 0;
@@ -152,6 +168,9 @@
 
   // .menu__link
   &__link {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   // .menu__sublist
@@ -205,6 +224,9 @@
 
   // .menu__sublink
   &__sublink {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

@@ -1,5 +1,48 @@
 <section class="form">
   <div class="form__container">
     <h2 class="form__title">Напишите нам</h2>
+    <form action="" class="form__form">
+      <div class="form__inputs">
+        <label class="form__label input-1" for="f_name"
+          >ФИО
+          <input
+            class="form__input input-1"
+            type="text"
+            name="f_name"
+            id="f_name"
+            placeholder="Иван Иванов"
+          />
+        </label>
+        <label class="form__label input-2" for="f_email"
+          >Email
+          <input
+            class="form__input"
+            type="email"
+            name="f_email"
+            id="f_email"
+            placeholder="login@domainn.com"
+          />
+        </label>
+        <label class="form__label input-3" for="f_company"
+          >Компания
+          <input
+            class="form__input"
+            type="text"
+            name="f_company"
+            id="f_company"
+            placeholder="Компания и ИНН компании"
+          />
+        </label>
+      </div>
+      <div class="form__submit">
+        <button class="form__btn main-btn" type="submit">Отправить</button>
+        <p class="form__agree">
+          Я даю согласие на обработку своих персональных данных и подтверждаю,
+          что ознакомлен(а) и согласен(а) с условиями
+          <a class="form__link" href="">Политики конфиденциальности</a> и
+          <a class="form__link" href="">Пользовательского соглашения*</a>
+        </p>
+      </div>
+    </form>
   </div>
 </section>
