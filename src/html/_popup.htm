@@ -1,10 +1,42 @@
 <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <img src="@img/icons/close.svg" alt="Кнопка закрыть" />
+      </button>
+      <div class="popup__text">Заказать обратный звонок</div>
+      <form action="" class="popup__form">
+        <input
+          class="popup__input"
+          type="tel"
+          name="f_phone"
+          id=""
+          placeholder="+7"
+        />
+        <button class="popup__btn main-btn" type="submit">Заказать</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="succsess" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <img src="@img/icons/close.svg" alt="Кнопка закрыть" />
+      </button>
+      <div class="popup__text">Заявка отправлена</div>
+      <p class="popup__subtext">Ожидайте, с вами свяжутся</p>
+      <div class="popup__btns">
+        <button data-close class="popup__btn-ok" type="submit">Понятно</button>
+        <button
+          data-popup="#popup"
+          class="popup__btn-repeat main-btn"
+          type="submit"
+        >
+          Оформить еще
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

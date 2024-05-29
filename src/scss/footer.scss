@@ -5,7 +5,6 @@
   // .footer__body
   &__body {
     padding-bottom: 40px;
-    margin-top: 80px;
     display: flex;
     justify-content: space-between;
 
@@ -39,11 +38,17 @@
   // .footer__phone
   &__phone {
     margin-bottom: 12px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   // .footer__email
   &__email {
     margin-bottom: 12px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   // .footer__socials

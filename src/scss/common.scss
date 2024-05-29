@@ -41,3 +41,9 @@ h2 {
     text-decoration: underline;
   }
 }
+
+.mobile-hide {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}

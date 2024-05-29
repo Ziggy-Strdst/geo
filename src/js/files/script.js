@@ -22,7 +22,7 @@ const dropdown = document.querySelectorAll('.dropdown');
 if (dropdown) {
   dropdown.forEach((link) => {
     link.addEventListener('click', (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       link.classList.toggle('dropdown-active');
       link.children[1].classList.toggle('sub-active');
     });
