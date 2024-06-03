@@ -1,0 +1,22 @@
+.article {
+  margin-bottom: 60px;
+  padding-top: 136px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+    padding-top: 84px;
+  }
+}
+
+.article__title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #225156;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
