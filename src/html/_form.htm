@@ -1,12 +1,12 @@
 <section class="form">
   <div class="form__container">
     <h2 class="form__title">Напишите нам</h2>
-    <form action="" class="form__form">
+    <form data-popup-message="#succsess" data-ajax action="" class="form__form">
       <div class="form__inputs">
         <label class="form__label input-1" for="f_name"
           >ФИО
           <input
-            class="form__input input-1"
+            class="form__input input-1 input"
             type="text"
             name="f_name"
             id="f_name"
@@ -16,7 +16,8 @@
         <label class="form__label input-2" for="f_phone"
           >Телефон
           <input
-            class="form__input"
+            data-required
+            class="form__input tel"
             type="tel"
             name="f_phone"
             id="f_phone"
@@ -26,7 +27,7 @@
         <label class="form__label input-3" for="f_company"
           >Компания
           <input
-            class="form__input"
+            class="form__input input"
             type="text"
             name="f_company"
             id="f_company"

@@ -5,9 +5,15 @@
         <img src="@img/icons/close.svg" alt="Кнопка закрыть" />
       </button>
       <div class="popup__text">Заказать обратный звонок</div>
-      <form action="" class="popup__form">
+      <form
+        data-ajax
+        data-popup-message="#succsess"
+        action=""
+        class="popup__form"
+      >
         <input
-          class="popup__input"
+          data-required
+          class="popup__input tel"
           type="tel"
           name="f_phone"
           id=""
